@@ -1,0 +1,21 @@
+// This is the program to accept the radius of a cicle and print the area, and circumference.
+//Written by: ChanPhearun Cheam
+
+#include <iostream> // This is the directive for input output
+#define PI 3.14
+using namespace std; // use standard namespace
+
+int main()      // main function
+{               // To open the main function block
+
+float radius, area, circum;  // Declare variables radius, area, circum to store the data
+		
+        cout<<" Enter radius: ";  //Ask the user to to enter radius
+    	cin>>radius;            // Accept a number and store in radius
+	
+		circum = 2*PI*radius;   //Calculate the circumference of the circle
+		area = PI*(radius*radius);      // Calculate the area of the circle
+        cout<<" The area of the circle is: "<< area << endl;  //display the area of the circle
+        cout<<" The circumference of the circle is: "<< circum << endl;   //display the circumference of the circle
+        return 0;   // return 0 to the OS
+}                   //Close the main function block
